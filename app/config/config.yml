@@ -134,3 +134,12 @@ assetic:
                 - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.woff"
 
             output: "fonts/glyphicons-halflings-regular.woff"
+
+# vich uploader
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        video:
+            uri_prefix: /upload_files/videos
+            upload_destination: '%kernel.project_dir%/upload_files/videos'
